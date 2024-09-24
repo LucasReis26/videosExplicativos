@@ -1,0 +1,61 @@
+seta para cima => volta no histórico de comandos;
+
+seta para baixo => avança no histórico de comandos;
+
+ctrl + w => fecha um arquivo;
+
+clear => limpa a tela do powershell;
+
+; => indica o final de um comando;
+
+ls => lista tudo que existe dentro do diretório atual;
+
+ls "pasta" => lista tudo que existe dentro do diretório "pasta";
+
+cd "pasta" => muda para a pasta a qual eu estou referenciando;
+
+* => referencia a porra toda;
+
+*.extensão => referencia todos os arquivos desta extensão;
+
+. => referencia a pasta atual;
+
+.. => referencia a pasta pai;
+
+mkdir "pasta" => cria um novo diretorio;
+
+rmdir "pasta" => apaga um diretório;
+
+notepad => abre o bloco de notas em um novo arquivo; (funciona somente dentro do windows)
+
+cat "arquivo" => lê o que tem dentro de um arquivo de texto;
+
+ni "arquivo".extensão => cria um arquivo do tipo da extensão; (funciona somente dentro do windows)
+
+rm "arquivo" => apaga um arquivo;
+
+explorer "pasta" => abre uma pasta; (funciona somente dentro do windows)
+
+mv "arquivo" "pasta diferente" => move o arquivo;
+
+mv "arquivo" "arquivo na pasta atual" => troca o nome de arquivo;
+
+cp "arquivo" "pasta diferente" => copia o arquivo pra pasta diferente;
+
+gcc => chama o compilador de c;
+
+-o => output; (saída)
+
+gcc "arquivo".c -o "nomeExecutável" => compila o nosso programa em c;
+
+./"nomeExecutável" => executa o nosso programa em c;
+
+> => redireciona a saída para um arquivo;
+
+cat "arquivoDeTexto" | ./"nomeExecutável" => redireciona a entrada para um arquivo;
+
+| => execute enquanto;
+
+diff (cat "arquivo1") (cat "arquivo2") => diferencia o conteúdo dos dois arquivos.
+
+cat "entradaEsperada" | ./"nomeExecutável" > "arquivoDeTexto"; diff (cat "saidaEsperada") (cat "arquivoDeTexto") => Se isso NÃO RETORNAR NADA, NOSSO PROGRAMA ESTÁ CORRETO!!!
